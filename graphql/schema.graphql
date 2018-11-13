@@ -1,0 +1,29 @@
+# type Person {
+#     name: String!,
+#     age: Int!,
+#     gender: String!,
+#     id: Int!
+# }
+
+type Movie {
+    id: Int!,
+    title: String!,
+    rating: Float!,
+    description_intro: String!,
+    language: String!,
+    medium_cover_image: String!,
+    genres: [String]
+}
+
+# query - 서버에서 어떤 정보를 받아올 때,
+type Query {
+    movies(limit: Int, rating: Float): [Movie]!
+    movie(id: Int!): Movie
+    suggestions(id: Int!): [Movie]!
+}
+
+# # mutation - 서버, 디비, 메모리에서 정보를 바꾸는 작업을 할 떄,
+# type Mutation {
+#     addMovie(title: String!, score: Int!): Movie!,
+#     deleteMovie(id: Int!): Boolean!
+# }
