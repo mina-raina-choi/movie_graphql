@@ -1,0 +1,9 @@
+{
+  "name": "movie_ql",
+  "version": "1.0.0",
+  "description": "Movie Graphql api",
+  "main": "index.js",
+  "repository": "https://github.com/minami-choi/movie_graphql.git",
+  "author": "Mina Choi",
+  "license": "MIT"
+}
